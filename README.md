@@ -1,95 +1,96 @@
-# Project Management Form (JSONPowerDB)
-
-A responsive web-based Project Management Form built using HTML, CSS, JavaScript, and JSONPowerDB (JPDB).
-This application allows users to create, view, and update project records with real-time database interaction.
+# Project Management Form using JSONPowerDB
 
 ---
 
-## Features
+## Table of Contents
 
-* Primary Key Handling (Project ID)
-
-  * Checks if record exists
-  * Enables Save or Update accordingly
-
-* Save New Project
-  Stores data in JSONPowerDB
-
-* Update Existing Project
-  Fetches and updates records using record number (rec_no)
-
-* Reset Functionality
-  Clears form and resets state
-
-* Dynamic Form Behavior
-  Fields are enabled or disabled based on logic
-
-* Validation
-  Prevents submission of empty fields
+1. Description
+2. Benefits of using JSONPowerDB
+3. Scope of Functionalities
+4. Examples of Use
+5. Getting Started
+6. Release History
+7. Project Status
+8. Sources
+9. Author
 
 ---
 
-## Tech Stack
+## Description
 
-* Frontend: HTML, CSS, JavaScript
-* Database: JSONPowerDB (JPDB)
-* Library: jpdb-commons.js
-* UI Framework: Bootstrap
+This project is a web-based Project Management Form built using HTML, CSS, JavaScript, and JSONPowerDB (JPDB). It allows users to manage project records efficiently by performing Create and Update operations with real-time database interaction.
 
----
-
-## Database Details
-
-| Property      | Value         |
-| ------------- | ------------- |
-| Database Name | COLLEGE-DB    |
-| Relation Name | PROJECT-TABLE |
-| Primary Key   | Project-ID    |
+The form uses Project ID as the primary key to determine whether a record should be created or updated. Based on user input, the application dynamically enables or disables form controls and performs validation before interacting with the database.
 
 ---
 
-## Input Fields
+## Benefits of using JSONPowerDB
 
-* Project ID (Primary Key)
-* Project Name
-* Assigned To
-* Assignment Date
-* Deadline
+* Simple and lightweight NoSQL database
+* Fast performance due to in-memory data storage
+* Schema-free structure using JSON format
+* Easy integration with frontend applications
+* No need for complex backend setup
+* Built-in REST API support for CRUD operations
+* Reduces development time significantly
 
 ---
 
-## How It Works
+## Scope of Functionalities
 
-1. Enter Project ID
-2. The system checks the database
+* Add new project records
+* Retrieve existing project data using primary key
+* Update existing records using record number (rec_no)
+* Reset form to initial state
+* Validate user input before submission
+* Dynamic UI behavior based on database response
 
-   * If not found: enables Save
-   * If found: fetches data and enables Update
-3. Perform Save or Update
-4. Reset returns the form to its initial state
+---
 
-### Run the Project
+## Examples of Use
+
+1. Enter a new Project ID
+
+   * System enables Save option
+   * User fills details and saves data
+
+2. Enter an existing Project ID
+
+   * System fetches and displays data
+   * User updates information and submits changes
+
+3. Reset button clears all inputs and restores initial state
+
+
+---
+
+### Run the Application
 
 * Open the project in VS Code
-* Use Live Server
+* Run using Live Server
 * Or open index.html in a browser
 
 ---
 
-## Important Notes
+## Release History
 
-* Run using Live Server instead of file protocol
-* Ensure a valid JPDB connection token
-* Database and relation are created automatically on first save
+* v1.0
+  Initial release of Project Management Form with JSONPowerDB integration
+  Features include Save, Update, Reset, and primary key-based record handling
 
 ---
 
-## Learning Outcomes
+## Project Status
 
-* Working with AJAX and API integration
-* Understanding NoSQL databases (JSONPowerDB)
-* Implementing CRUD operations
-* Managing dynamic UI state
+The project is complete and functional as per the given requirements. Further improvements such as UI enhancements and deployment can be added.
+
+---
+
+## Sources
+
+* JSONPowerDB Documentation
+* Login2Xplore Resources
+* Bootstrap Documentation
 
 ---
 
